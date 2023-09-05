@@ -1,0 +1,156 @@
+/* 公共样式区域 */
+/* #region */
+/*设置左浮动*/
+.leftfix {
+  float: left;
+}
+
+/*设置右浮动*/
+.rightfix {
+  float: right;
+}
+
+/*清除浮动影响*/
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* 版心公共样式 */
+.main {
+  width: 1190px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* #endregion */
+
+/* 顶部菜单区域 */
+/* #region */
+/* 顶部菜单容器 */
+.topbar {
+  width: 100%;
+  height: 30px;
+  background-color: #ECECEC;
+}
+
+/* 顶部菜单-左侧容器 */
+.topbar .topbar_left {
+  height: 30px;
+  line-height: 30px;
+  font-size: 0px;
+}
+
+/* 顶部菜单-左侧容器-a和span*/
+.topbar_left a,
+.topbar_left span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 顶部菜单-左侧容器-span */
+.topbar_left span {
+  color: #666666;
+}
+
+/* 顶部菜单-欢迎容器 */
+.topbar .topbar_welcome {
+  color: #868686;
+  font-weight: 400;
+  margin-right: 28px;
+}
+
+/* 顶部菜单-左侧分隔符容器 */
+.topbar .topbar_separtor {
+  margin: 9px 10px 0px 10px;
+  height: 12px;
+  border-right: 1px solid #666666;
+}
+
+/* 顶部菜单-右侧菜单容器 */
+.topbar .topbar_menu {
+  color: #666666;
+  height: 30px;
+  font-weight: 500;
+}
+
+/* 顶部菜单-菜单文字 */
+.topbar .topbar_text {
+  height: 16px;
+  margin-top: 7px;
+}
+
+/* 顶部菜单-菜单分隔符号 */
+.topbar .topbar_line {
+  margin: 9px 15px 0px 15px;
+  height: 12px;
+  border-right: 1px solid #666666;
+}
+
+/* #endregion */
+
+/* 搜索区域 */
+/* #region */
+/* 搜索容器 */
+.search {
+  width: 100%;
+  height: 120px;
+}
+
+/* 搜索-右侧容器 */
+.search .search_right {
+  width: 590px;
+  height: 36px;
+  margin-top: 42px;
+}
+
+/* 搜索-输入框容器 */
+.search .search_input {
+  width: 510px;
+  height: 36px;
+  border: 1px solid #DD302D;
+  box-sizing: border-box;
+}
+
+/* 搜索-按钮容器 */
+.search .search_button {
+  width: 80px;
+  height: 36px;
+  background-color: #DD302D;
+  background-image: url("/Gmall-Exercise/尚品汇_资源/serch_icon.png");
+  background-repeat: no-repeat;
+  background-position: 28px 6px;
+}
+
+/* #endregion */
+
+/* 全部商品分类区域 */
+/* #region */
+/* 全部商品分类容器 */
+.goodsmenu {
+  height: 48px;
+  border-bottom: 1px solid #DD302D;
+  box-sizing: border-box;
+}
+
+/* 全部商品分类-全部商品分类容器 */
+.goodsmenu .goodsmenu_allgoods {
+  width: 190px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #DD302D;
+  text-align: center;
+  line-height: 48px;
+  margin-right: 10px;
+}
+
+/* 全部商品分类-菜单文本容器 */
+.goodsmenu .goodsmenu_menutext {
+  height: 23px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 12.5px;
+  margin-right: 20px;
+}
+/* #endregion */
