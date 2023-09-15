@@ -1,5 +1,4 @@
-/* 公共样式区域 */
-/* #region */
+/* #region公共样式区域 */
 /*设置左浮动*/
 .leftfix {
   float: left;
@@ -26,11 +25,9 @@
 
 /* #endregion */
 
-/* 顶部菜单区域 */
-/* #region */
+/* #region顶部菜单区域 */
 /* 顶部菜单容器 */
 .topbar {
-  width: 100%;
   height: 30px;
   background-color: #ECECEC;
 }
@@ -38,41 +35,34 @@
 /* 顶部菜单-左侧容器 */
 .topbar .topbar_left {
   height: 30px;
-  line-height: 30px;
   font-size: 0px;
-}
-
-/* 顶部菜单-左侧容器-a和span*/
-.topbar_left a,
-.topbar_left span {
-  font-size: 12px;
-  font-weight: 500;
-}
-
-/* 顶部菜单-左侧容器-span */
-.topbar_left span {
-  color: #666666;
 }
 
 /* 顶部菜单-欢迎容器 */
 .topbar .topbar_welcome {
   color: #868686;
-  font-weight: 400;
   margin-right: 28px;
+}
+
+/* 顶部菜单-左侧容器的div*/
+.topbar_left div {
+  float: left;
+  height: 16px;
+  font-size: 12px;
+  color: #666;
+  margin-top: 7px;
 }
 
 /* 顶部菜单-左侧分隔符容器 */
 .topbar .topbar_separtor {
-  margin: 9px 10px 0px 10px;
+  margin: 9px 10px;
   height: 12px;
   border-right: 1px solid #666666;
 }
 
-/* 顶部菜单-右侧菜单容器 */
-.topbar .topbar_menu {
-  color: #666666;
-  height: 30px;
-  font-weight: 500;
+/* 顶部菜单-右侧菜单li */
+.topbar .topbar_right li {
+  float: right;
 }
 
 /* 顶部菜单-菜单文字 */
@@ -90,18 +80,14 @@
 
 /* #endregion */
 
-/* 搜索区域 */
-/* #region */
+/* #region搜索区域  */
 /* 搜索容器 */
 .search {
-  width: 100%;
   height: 120px;
 }
 
 /* 搜索-右侧容器 */
 .search .search_right {
-  width: 590px;
-  height: 36px;
   margin-top: 42px;
 }
 
@@ -125,8 +111,7 @@
 
 /* #endregion */
 
-/* 全部商品分类区域 */
-/* #region */
+/* #region全部商品分类区域 */
 /* 全部商品分类容器 */
 .goodsmenu {
   height: 48px;
@@ -146,11 +131,509 @@
 }
 
 /* 全部商品分类-菜单文本容器 */
-.goodsmenu .goodsmenu_menutext {
+.goodsmenu .goodsmenu_menu li {
+  float: left;
   height: 23px;
   font-size: 16px;
   color: #333;
   margin-top: 12.5px;
   margin-right: 20px;
 }
+
 /* #endregion */
+
+/* #region bannenr区域 */
+/* banner容器 */
+.banner {
+  margin-top: 10px;
+}
+
+/* banner-banner菜单容器 */
+.banner .banner_left {
+  width: 190px;
+  height: 458px;
+  background: #F4F4F4;
+  font-size: 14px;
+  color: #333;
+}
+
+/* banner-菜单容器 */
+.banner .banner_menu {
+  position: relative;
+  margin-top: 9px;
+}
+
+/* banner-banner菜单容器文本 */
+.banner .banner_menu>li {
+  height: 20px;
+  line-height: 20px;
+  padding: 4px 16px;
+}
+
+/* banner-banner菜单容器li的hover样式*/
+.banner .banner_menu>li:hover {
+  background-color: #DD302D;
+}
+
+/* banner-banner菜单容器li的hover时a样式*/
+.banner .banner_menu>li:hover>a {
+  color: white;
+}
+
+/* banner-二级菜单hover后展示*/
+.banner .banner_menu>li:hover .banner_second {
+  display: block;
+}
+
+/* banner-二级菜单容器*/
+.banner .banner_second {
+  width: 700px;
+  height: 458px;
+  background-color: white;
+  position: absolute;
+  top: -9px;
+  left: 190px;
+  font-size: 14px;
+  color: #666666;
+  display: none;
+}
+
+/* banner-二级菜单容器-ul*/
+.banner .banner_second ul {
+  height: 36px;
+  margin-left: 20px;
+}
+
+/* banner-二级菜单容器-首个ul*/
+.banner .banner_second ul:first-of-type {
+  margin-top: 10px;
+}
+
+/* banner-二级菜单容器-li*/
+.banner .banner_second li {
+  float: left;
+  height: 20px;
+  border-left: 1px solid #999;
+  box-sizing: border-box;
+  margin-top: 8px;
+  margin-right: 10px;
+  padding-left: 10px;
+
+}
+
+/* banner-二级菜单容器-首个li*/
+.banner .banner_second li:first-of-type {
+  padding: 0px;
+  width: 70px;
+  border: none;
+  font-weight: bold;
+}
+
+/* banner-banner图容器 */
+.banner .banner_center {
+  margin-left: 10px;
+}
+
+/* banner-右侧容器*/
+.banner .banner_right {
+  margin-left: 10px;
+  width: 290px;
+}
+
+/* banner-尚品快报容器 */
+.banner .banner_bulletin {
+  height: 158px;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+}
+
+/* banner-尚品快报顶部容器 */
+.banner .banner_bulletintop {
+  width: 262px;
+  height: 40px;
+  margin: 0 auto;
+  border-bottom: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  line-height: 40px;
+}
+
+/* banner-尚品快报标题容器 */
+.banner .banner_title {
+  font-size: 14px;
+  color: #000000;
+}
+
+/* banner-尚品快报更多容器 */
+.banner .banner_more {
+  color: #999;
+}
+
+/* banner-尚品快报更多容器hover样式 */
+.banner .banner_more:hover {
+  color: #DD302D;
+}
+
+/* banner-尚品快报底部容器 */
+.banner .banner_bulletinbottom {
+  width: 262px;
+  margin: 0 auto;
+  color: #666666;
+  margin-top: 8px;
+}
+
+/* banner-尚品快报底部菜单-li样式 */
+.banner .banner_bulletinbottom li {
+  margin-bottom: 12px;
+  height: 14px;
+}
+
+/* banner-图标容器 */
+.banner .banner_icons {
+  width: 290px;
+  height: 290px;
+  margin-top: 10px;
+}
+
+/* banner-图标-li */
+.banner .banner_icons li {
+  width: 48px;
+  height: 71px;
+  margin-top: 16px;
+  margin-left: 16px;
+  text-align: center;
+}
+
+/* banner-图标-li */
+.banner .banner_icons a {
+  display: block;
+  width: 48px;
+  height: 71px;
+  text-align: center;
+}
+
+/* banner-图标-li文字 */
+.banner .banner_icons li span {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* banner-图标-li的hover样式 */
+.banner .banner_icons a:hover span {
+  color: #DD302D;
+}
+
+/* banner-图标-图片整体样式 */
+.banner .banner_icons div {
+  width: 48px;
+  height: 48px;
+  background-image: url(/Gmall-Exercise/尚品汇_资源/精灵图-侧边功能.png);
+}
+
+/* banner-图标-第一张图片 */
+.banner_iconlist:nth-child(1) li:nth-child(1) .banner_img {
+  background-position: 0px 0px;
+}
+
+/* banner-图标-第二张图片 */
+.banner_iconlist:nth-child(1) li:nth-child(2) .banner_img {
+  background-position: -48px 0px;
+}
+
+/* banner-图标-第三张图片 */
+.banner_iconlist:nth-child(1) li:nth-child(3) .banner_img {
+  background-position: -96px 0px;
+}
+
+/* banner-图标-第四张图片 */
+.banner_iconlist:nth-child(1) li:nth-child(4) .banner_img {
+  background-position: -144px 0px;
+}
+
+/* banner-图标-第五张图片 */
+.banner_iconlist:nth-child(2) li:nth-child(1) .banner_img {
+  background-position: 0px -48px;
+}
+
+/* banner-图标-第六张图片 */
+.banner_iconlist:nth-child(2) li:nth-child(2) .banner_img {
+  background-position: -48px -48px;
+}
+
+/* banner-图标-第七张图片 */
+.banner_iconlist:nth-child(2) li:nth-child(3) .banner_img {
+  background-position: -96px -48px;
+}
+
+/* banner-图标-第八张图片 */
+.banner_iconlist:nth-child(2) li:nth-child(4) .banner_img {
+  background-position: -144px -48px;
+}
+
+/* banner-图标-第九张图片 */
+.banner_iconlist:nth-child(3) li:nth-child(1) .banner_img {
+  background-position: 0px -96px;
+}
+
+/* banner-图标-第十张图片 */
+.banner_iconlist:nth-child(3) li:nth-child(2) .banner_img {
+  background-position: -48px -96px;
+}
+
+/* banner-图标-第十一张图片 */
+.banner_iconlist:nth-child(3) li:nth-child(3) .banner_img {
+  background-position: -96px -96px;
+}
+
+/* banner-图标-第十二张图片 */
+.banner_iconlist:nth-child(3) li:nth-child(4) .banner_img {
+  background-position: -144px -96px;
+}
+
+/* #endregion */
+
+/* #region秒杀区域 */
+/* 秒杀容器  */
+.shopping {
+  margin-top: 10px;
+}
+
+/* 秒杀容器-li  */
+.shopping .shopping_list li {
+  float: left;
+}
+
+/* 秒杀容器-li间距  */
+.shopping .shopping_list li:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+/* #endregion */
+
+/* #region家用电器区域 */
+/* 家用电器容器 */
+.appliance {
+  margin-top: 48px;
+}
+
+/* 家用电器-顶部容器 */
+.appliance .appliance_top {
+  height: 30px;
+}
+
+/* 家用电器-title  */
+.appliance .appliance_top>span {
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* 家用电器-菜单文字 */
+.appliance .appliance_menu li {
+  float: left;
+  font-size: 16px;
+  color: #666;
+  line-height: 30px;
+}
+
+/* 家用电器-菜单文字-热门文字 */
+.appliance .appliance_menu li:first-of-type a {
+  color: #DD302D;
+}
+
+/* 家用电器-分隔符 */
+.appliance .appliance_devide {
+  height: 16px;
+  border-left: 1px solid #666;
+  box-sizing: border-box;
+  margin: 7px 10px;
+}
+
+/* 家用电器-底部菜单 */
+.appliance .appliance_bottom {
+  margin-top: 4px;
+  height: 432px;
+  border-top: 2px solid #DD302D;
+}
+
+/* 家用电器-底部盒子 */
+.appliance .appliance_box {
+  float: left;
+  height: 432px;
+  box-sizing: border-box;
+}
+
+/* 家用电器-节能补贴菜单 */
+.appliance .appliance_box1 {
+  width: 230px;
+  background: #F4F4F4;
+}
+
+/* 家用电器-节能补贴 */
+.appliance .appliance_list {
+  width: 190px;
+  height: 108px;
+  margin: 20px;
+  font-size: 16px;
+  color: #666666;
+}
+
+/* 家用电器-节能补贴-li */
+.appliance .appliance_list li {
+  float: left;
+  width: 90px;
+  height: 25.5px;
+  text-align: center;
+  border-bottom: 1px solid #D9D9D9;
+  box-sizing: border-box;
+}
+
+/* 家用电器-节能补贴-li上下距离 */
+.appliance .appliance_list li:nth-child(3),
+.appliance .appliance_list li:nth-child(4) {
+  margin-top: 10.5px;
+  margin-bottom: 10.5px;
+}
+
+/* 家用电器-节能补贴-li左右距离 */
+.appliance .appliance_list li:nth-child(2n-1) {
+  margin-right: 10px;
+}
+
+/* 家用电器-节能补贴-li-a */
+.appliance .appliance_list li a {
+  display: block;
+  height: 22px;
+}
+
+/* 家用电器-编组 */
+.appliance .appliance_marshalling {
+  margin-left: 18px;
+  margin-top: 30px;
+}
+
+/* 家用电器-全球购 */
+.appliance .appliance_box2 {
+  width: 340px;
+}
+
+/* 家用电器-微波炉 */
+.appliance .appliance_box3 {
+  width: 206px;
+}
+
+/* 家用电器-冰箱 */
+.appliance .appliance_box4 {
+  width: 206px;
+  border-left: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+/* 家用电器-电饭煲 */
+.appliance .appliance_box5 {
+  width: 206px;
+  border-left: 1px solid #E2E2E2;
+}
+
+/* 家用电器-边框线 */
+.appliance .appliance_boxline {
+  border-top: 1px solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+/* #endregion */
+
+/* #region页脚区域 */
+/* 页脚容器 */
+.footer {
+  background-color: #483E3E;
+  margin-top: 48px;
+  height: 440px;
+  overflow: hidden;
+}
+
+/* 页脚容器-顶部 */
+.footer .footer_top {
+  height: 198px;
+  margin-top: 48px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #584D4D;
+}
+
+/* 页脚容器-顶部菜单 */
+.footer .footer_top ul {
+  float: left;
+  width: 190px;
+  font-size: 14px;
+  margin-right: 10px;
+  color: #FFFFFF;
+}
+
+/* 页脚容器-顶部菜单-ul */
+.footer .footer_top ul:last-child {
+  margin-right: 0px;
+}
+
+/* 页脚容器-顶部菜单-文字上下间距 */
+.footer .footer_top ul li{
+  margin-bottom: 2px;
+}
+
+/* 页脚容器-顶部菜单-a */
+.footer .footer_top li a {
+  color: #FFFFFF;
+}
+
+/* 页脚容器-顶部菜单-li的hover样式 */
+.footer .footer_top li:hover a {
+  color: #DD302D;
+}
+
+/* 页脚容器-底部菜单 */
+.footer .footer_menu {
+  width: 957px;
+  margin: 47px auto 10px auto;
+}
+
+/* 页脚容器-底部菜单-li */
+.footer .footer_menu li {
+  float: left;
+}
+
+/* 页脚容器-底部菜单分割线 */
+.footer .footer_line {
+  box-sizing: border-box;
+  border-left: 1px solid #fff;
+  height: 10px;
+  margin: 4px 26px;
+}
+
+/* 页脚容器-底部菜单-li */
+.footer .footer_menu li a{
+  color: #fff;
+}
+
+/* 页脚容器-底部菜单-li */
+.footer .footer_menu li a:hover{
+  color: #DD302D;
+}
+
+/* 页脚容器-版权*/
+.footer .footer_record {
+  width: 190px;
+  height: 18px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 页脚容器-版权-a*/
+.footer .footer_record a {
+  color: #FFFFFF;
+}
+
+/* 页脚容器-版权-a的hover样式*/
+.footer .footer_record a:hover {
+  color: #DD302D;
+}
+
+/* #endregion家用电器区域 */
